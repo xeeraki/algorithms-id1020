@@ -8,7 +8,7 @@ public class FixedCapacityStackStrings<Item> {
 
 
     public FixedCapacityStackStrings(int cap){
-        a = (Item[])new String[cap];
+        a = (Item[])new Object[cap];
 
     }
 
@@ -34,7 +34,7 @@ public class FixedCapacityStackStrings<Item> {
 
         while (!StdIn.isEmpty()){
             String item = StdIn.readString();
-            if(s.equals("-")) s.push(item);
+            if(!item.equals("-")) s.push(item);
             else if(!s.isEmpty()) StdOut.print(s.pop() + " ");
         }
         StdOut.println("(" + s.size() + " left on stack)");
