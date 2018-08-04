@@ -1,14 +1,20 @@
 import java.util.Iterator;
+import java.util.ListIterator;
 
 public class Bag<Item> implements Iterable<Item> {
     private int N;
-    private Item item;
-    Bag(){
+    private Node first;
 
+    private class Node{
+        Node next;
+        Item item;
     }
 
-    void add(Item item){
-        this.item = item;
+    public void add(Item item){
+        Node oldFirst = first;
+        first = new Node();
+        first.item = item;
+        first.next = oldFirst;
         N++;
     }
 
@@ -23,6 +29,26 @@ public class Bag<Item> implements Iterable<Item> {
 
     @Override
     public Iterator<Item> iterator() {
-        return null;
-    }
+        return new ListIterator(); }
+
+        private class ListIterator implements Iterator<Item>{
+
+        private Node current = first;
+            @Override
+            public boolean hasNext() {
+                return current != null;
+            }
+
+            @Override
+            public Item next() {
+                Item item = current.item;
+                current = current.next;
+                return item;
+            }
+
+            @Override
+            public void remove() {
+
+            }
+        }
 }
