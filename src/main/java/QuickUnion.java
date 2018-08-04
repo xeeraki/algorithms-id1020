@@ -1,30 +1,29 @@
 import edu.princeton.cs.introcs.StdIn;
 import edu.princeton.cs.introcs.StdOut;
 
-public class UF {
+public class QuickUnion {
     private int[] id;
     private int count;
 
-    public UF(int n){
+    public QuickUnion(int n){
         count = n;
         id = new int[n];
         for(int i = 0; i < n; i++){
             id[i] = i;
         }
     }
-    public int find(int p){
-        return id[p];
+    private int find(int p){
+        while(p != id[p]) p = id[p];
+        return p;
     }
 
     public void union(int p, int q){
-    int pID = find(p);
-    int qID = find(q);
 
-    if(pID== qID) return;
-    for(int i = 0; i < id.length; i++){
-        if(id[i] == pID) id[i] = qID;
-        count--;
-    }
+     int pRoot = find(p);
+     int qRoot = find(q);
+     if(pRoot == qRoot) return;
+     id[pRoot] = qRoot;
+     count--;
     }
 
     public boolean connected(int p, int q){
@@ -38,7 +37,7 @@ public class UF {
 
     public static void main(String[] args){
         int N = StdIn.readInt();
-        UF uf = new UF(N);
+        QuickUnion uf = new QuickUnion(N);
         while(!StdIn.isEmpty()){
             int p = StdIn.readInt();
             int q = StdIn.readInt();
@@ -46,7 +45,8 @@ public class UF {
             uf.union(p,q);
             StdOut.println(p +" " +q);
         }
-       StdOut.println(uf.count() + "components");
+        StdOut.println(uf.count() + "components");
 
     }
 }
+

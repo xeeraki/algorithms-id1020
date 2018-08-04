@@ -1,30 +1,37 @@
 import edu.princeton.cs.introcs.StdIn;
 import edu.princeton.cs.introcs.StdOut;
 
-public class UF {
+public class weightedQuickUnionUF {
+
     private int[] id;
     private int count;
+    private int[] sz; // size of component for roots (sites indexed)
 
-    public UF(int n){
+    public weightedQuickUnionUF(int n){
         count = n;
         id = new int[n];
-        for(int i = 0; i < n; i++){
+        for(int i = 0; i < n; i++)
             id[i] = i;
-        }
+        sz = new int[n];
+        for(int i = 0; i < n; i++)
+            sz[i] = 1;
     }
-    public int find(int p){
-        return id[p];
+    private int find(int p){
+        while(p != id[p]) p = id[p];
+        return p;
     }
 
     public void union(int p, int q){
-    int pID = find(p);
-    int qID = find(q);
 
-    if(pID== qID) return;
-    for(int i = 0; i < id.length; i++){
-        if(id[i] == pID) id[i] = qID;
+      int i = find(p);
+      int j = find(q);
+      if(i == j) return;
+      //make smaller root point to larger one
+      if(sz[i] < sz[j]){id[i] = j; sz[j] += sz[i];}
+      else { id[j] = i; sz[i] += sz[j];
+
+          }
         count--;
-    }
     }
 
     public boolean connected(int p, int q){
@@ -38,7 +45,7 @@ public class UF {
 
     public static void main(String[] args){
         int N = StdIn.readInt();
-        UF uf = new UF(N);
+       weightedQuickUnionUF uf = new weightedQuickUnionUF(N);
         while(!StdIn.isEmpty()){
             int p = StdIn.readInt();
             int q = StdIn.readInt();
@@ -46,7 +53,7 @@ public class UF {
             uf.union(p,q);
             StdOut.println(p +" " +q);
         }
-       StdOut.println(uf.count() + "components");
+        StdOut.println(uf.count() + "components");
 
     }
 }
