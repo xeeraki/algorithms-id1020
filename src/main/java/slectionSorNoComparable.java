@@ -15,7 +15,6 @@ public class slectionSorNoComparable {
             a[min] = temp;
         }
     }
-
    }
 
     private static void show(int[] a){
