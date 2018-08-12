@@ -3,9 +3,10 @@ import edu.princeton.cs.introcs.StdOut;
 
 public class mergeSort {
     private static Comparable[] aux;
+
     private static void show(String[] a) {
-        for(int i = 0; i < a.length-1; i++){
-            StdOut.print(a[i] + " ");
+        for(int i = 0; i < a.length; i++){
+            StdOut.print(a[i] + "");
         }
         StdOut.println();
 
@@ -17,13 +18,13 @@ public class mergeSort {
     }
     private static void merge(Comparable[] a , Comparable[] aux, int lo, int mid, int hi){
         for(int k = lo; k <= hi; k++){
-            aux[k] = a[k];
+            aux[k] = a[k];//copy the a[k] to the aux[] array
         }
         int i = lo, j = mid +1;
         for(int k = lo; k <= hi; hi++){
-            if(i > mid)       a[k] = aux[j++];
-            else if(j > hi)   a[k] = aux[i++];
-            else if(less(aux[j], aux[i])) a[k] = aux[j++];
+            if(i > mid)       a[k] = aux[j++];//if left side array is finished
+            else if(j > hi)   a[k] = aux[i++];//if right side array is finished
+            else if(less(aux[j], aux[i])) a[k] = aux[j++]; //if aux[j] <aux[i] 
             else a[k] = aux[i++];
         }
     }

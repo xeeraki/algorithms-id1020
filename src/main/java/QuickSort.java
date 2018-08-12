@@ -15,19 +15,21 @@ public class QuickSort {
     }
 
     private static boolean less(Comparable v , Comparable w){
-        return v.compareTo(w) < 0;
+        return v.compareTo(w) < 0;//return -1 , 0 or 1
     }
 
 
 
     private static int partition(Comparable[] a, int lo, int hi){
         int i = lo, j = hi+1;
-        Comparable v = a[lo];
+        Comparable v = a[lo];// pivot(partition element)
 
         while(true){
-            while(less(a[++i] ,v)) if(i == hi)break;
-            while(less(v, a[--j])) if(j == lo)break;
-            if(i >= j) break;
+            while(less(a[++i] ,v))
+                if(i == hi)break;//to check not out of bound
+            while(less(v, a[--j]))
+                if(j == lo)break;//to check not out of bound
+            if(i >= j) break;// if pointer cross each other
             exch(a,i,j);
         }
         exch(a,lo,j);
