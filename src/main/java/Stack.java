@@ -4,6 +4,8 @@ public class Stack<Item> {
 
     private Node first;
     private int N;
+
+    //inner class
     private class Node{
 
         Item item;

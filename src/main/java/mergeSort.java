@@ -24,7 +24,7 @@ public class mergeSort {
         for(int k = lo; k <= hi; hi++){
             if(i > mid)       a[k] = aux[j++];//if left side array is finished
             else if(j > hi)   a[k] = aux[i++];//if right side array is finished
-            else if(less(aux[j], aux[i])) a[k] = aux[j++]; //if aux[j] <aux[i] 
+            else if(less(aux[j], aux[i])) a[k] = aux[j++]; //if aux[j] <aux[i]
             else a[k] = aux[i++];
         }
     }
