@@ -1,14 +1,9 @@
-public class MaxPQ<Key extends Comparable<Key>> {
+
+public class heapSort <Key extends Comparable <Key>>{
     private int N = 0;
-    private Node first;
     private Key pq[];
 
-    private class Node{
-        Key key;
-        Node next;
-    }
-
-    public MaxPQ(int maxN){
+    public heapSort(int maxN){
         pq = (Key[]) new Comparable[maxN+1];
     }
 
@@ -38,8 +33,8 @@ public class MaxPQ<Key extends Comparable<Key>> {
     }
     public void swim(int k){
 
-            while(k > 1 && less(k/2,k)){
-                exch(k/2,k);
+        while(k > 1 && less(k/2,k)){
+            exch(k/2,k);
             k=k/2;
         }
     }
@@ -61,3 +56,5 @@ public class MaxPQ<Key extends Comparable<Key>> {
         }
     }
 }
+
+
