@@ -25,17 +25,16 @@ public class MaxPQ<Key extends Comparable<Key>> {
         return max;
     }
 
-
     public boolean isEmpty(){
-        return first == null;
+        return N == 0;
     }
 
     public int size(){
         return N;
     }
 
-    public boolean less(Comparable v, Comparable w){
-        return v.compareTo(w)<0;
+    private boolean less(int v, int w){
+        return pq[v].compareTo(pq[w])<0;
     }
     public void swim(int k){
 
