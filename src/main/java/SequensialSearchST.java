@@ -22,9 +22,18 @@ public class SequensialSearchST<Key , Value> {
         return N;
     }
 
+    public Iterable<Key> keys(){
 
+    }
+
+
+    //lazy version of delete
     public void delete(Key key){
-        return put(key,null);
+        put(key,null);
+    }
+
+    public boolean contains(Key key){
+        return get(key) != null;
     }
 
 
