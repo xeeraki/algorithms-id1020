@@ -22,26 +22,28 @@ public class SequentialSearchST<Key , Value> {
             this.val = val;
             this.next = next;
         }
-
-
+    }
+    public SequentialSearchST() {
     }
 
     public int size(){
         return N;
     }
-    public void enqueue(Key key){
+
+/*
+    public void enqueue(Key key,Value val){
         Node oldLast = last;
-        last = new Node();
+        last = new Node(key,val,first);
         last.key = key;
         last.next = null;
         if(isEmpty()) first = last;
         else oldLast.next = last;
         N++;
     }
-
+*/
 
     public boolean isEmpty(){
-        return first == null;
+        return size() == 0;
     }
     //lazy version of delete
     public void delete(Key key){
@@ -83,15 +85,14 @@ public class SequentialSearchST<Key , Value> {
         N++;
     }
 
-    public Iterable<Key> keys(){
+    public Iterable<Key> keys()  {
         Queue<Key> queue = new Queue<Key>();
-        for(Node x = first; x != null; x = x.next)
+        for (Node x = first; x != null; x = x.next)
             queue.enqueue(x.key);
-
         return queue;
     }
     public static void main(String[] args){
-        SequentialSearchST<String , Integer> st = new SequentialSearchST<>();
+        SequentialSearchST<String , Integer> st = new SequentialSearchST<String, Integer>();
         for(int i = 0; !StdIn.isEmpty(); i++){
             String key = StdIn.readString();
             st.put(key,i);
