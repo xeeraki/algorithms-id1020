@@ -85,7 +85,7 @@ public class SequentialSearchST<Key , Value> {
         N++;
     }
 
-    public Iterable<Key> keys()  {
+    public Iterable<Key> keys(Key key)  {
         Queue<Key> queue = new Queue<Key>();
         for (Node x = first; x != null; x = x.next)
             queue.enqueue(x.key);

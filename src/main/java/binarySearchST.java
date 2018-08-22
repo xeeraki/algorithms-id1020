@@ -60,4 +60,35 @@ public class binarySearchST<Key extends Comparable<Key> , Value> {
 
     }
 
+    public Key min()
+    { return keys[0];
+    }
+    public Key max()
+    { return keys[N-1];
+    }
+    public Key select(int k)
+    { return keys[k]; }
+    public Key ceiling(Key key)
+    {
+        int i = rank(key);
+        return keys[i];
+    }
+    public Key floor(Key key)
+    // See Exercise 3.1.17.
+
+    public Iterable<Key> keys(Key lo, Key hi)
+    {
+        Queue<Key> q = new Queue<Key>();
+        for (int i = rank(lo); i < rank(hi); i++)
+            q.enqueue(keys[i]);
+        if (contains(hi))
+            q.enqueue(keys[rank(hi)]);
+        return q;
+    }
+
+    private boolean contains(Key hi) {
+        return size() != 0;
+    }
+
+
 }
