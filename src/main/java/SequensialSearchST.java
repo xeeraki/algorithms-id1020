@@ -91,6 +91,7 @@ public class SequentialSearchST<Key , Value> {
             queue.enqueue(x.key);
         return queue;
     }
+
     public static void main(String[] args){
         SequentialSearchST<String , Integer> st = new SequentialSearchST<String, Integer>();
         for(int i = 0; !StdIn.isEmpty(); i++){
