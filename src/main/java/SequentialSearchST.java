@@ -1,9 +1,7 @@
 import edu.princeton.cs.introcs.StdIn;
 import edu.princeton.cs.introcs.StdOut;
 
-import java.util.Collection;
 import java.util.Iterator;
-import java.util.Queue;
 
 public class SequentialSearchST<Key , Value> {
 
@@ -85,11 +83,12 @@ public class SequentialSearchST<Key , Value> {
         N++;
     }
 
-    public Iterable<Key> keys(Key key)  {
+    public Iterable<Key> keys()  {
         Queue<Key> queue = new Queue<Key>();
-        for (Node x = first; x != null; x = x.next)
+        for (Node x = first; x != null; x = x.next) {
             queue.enqueue(x.key);
-        return queue;
+        }
+        return (Iterable)queue;
     }
 
     public static void main(String[] args){

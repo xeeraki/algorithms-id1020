@@ -1,13 +1,18 @@
 import static edu.princeton.cs.introcs.BinaryStdIn.isEmpty;
+import edu.princeton.cs.introcs.StdIn;
+import edu.princeton.cs.introcs.StdOut;
 
-public class binarySearchST<Key extends Comparable<Key> , Value> {
+import java.util.*;
+import java.util.Queue;
+
+public class BinarySearchST<Key extends Comparable<Key> , Value> {
 
     private Key[] keys;
     private Value[] vals;
     private int N;
 
 
-    public binarySearchST(int capacity){
+    public BinarySearchST(int capacity){
         keys = (Key[]) new Comparable[capacity];
         vals = (Value[])new Object[capacity];
 
@@ -73,22 +78,21 @@ public class binarySearchST<Key extends Comparable<Key> , Value> {
         int i = rank(key);
         return keys[i];
     }
-    public Key floor(Key key)
+    //public Key floor(Key key)
     // See Exercise 3.1.17.
-
-    public Iterable<Key> keys(Key lo, Key hi)
-    {
-        Queue<Key> q = new Queue<Key>();
-        for (int i = rank(lo); i < rank(hi); i++)
-            q.enqueue(keys[i]);
-        if (contains(hi))
-            q.enqueue(keys[rank(hi)]);
-        return q;
-    }
-
     private boolean contains(Key hi) {
         return size() != 0;
     }
+
+   /*public Iterable<Key> keys(Key lo, Key hi) {
+        Queue<Key> queue = new PriorityQueue<Key>();
+        for  (int i = rank(lo); i < rank(hi); i++)
+            queue.(keys[i]);
+        if (contains(hi))
+            queue.enqueue(keys[rank(hi)]);
+        return queue;
+    }
+*/
 
 
 }
