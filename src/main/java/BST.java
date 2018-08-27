@@ -163,7 +163,7 @@ public class BST<Key extends  Comparable<Key> , Value >{
     {
         Queue<Key> queue = new Queue<Key>();
         keys(root, queue, lo, hi);
-        return queue;
+        return (Iterable)queue;
     }
     private void keys(Node x, Queue<Key> queue, Key lo, Key hi)
     {
