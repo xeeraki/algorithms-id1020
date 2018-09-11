@@ -1,11 +1,22 @@
+import edu.princeton.cs.introcs.StdIn;
+import edu.princeton.cs.introcs.StdOut;
+
 import java.util.Iterator;
 public class DoublyLinkedList<Item> implements Iterable<Item> {
 
 
-    private Node first;
-    private Node last;
+    private Node first; // before  first item
+    private Node last; //after last item
     private int N;
 
+    public DoublyLinkedList(){
+        first = new Node();
+        last = new Node();
+
+        first.next = last;
+        last.prev = first;
+
+    }
 
     private class Node{
         Item item;
@@ -19,25 +30,25 @@ public class DoublyLinkedList<Item> implements Iterable<Item> {
     public int size(){
         return N;
     }
-
+//add item to the end of queue
     public void enqueue(Item item){
         Node oldLast = last;
         last = new Node();
         last.item = item;
         last.next = null;
+        last.prev = oldLast;
         if(isEmpty()) first = last;
         else oldLast.next = last;
         N++;
     }
-
+//delete item from the front of queue
     public Item dequeue(){
         Item item = first.item;
         first = first.next;
         if(isEmpty()) last = null;
+        else first.prev = null;
         N--;
         return item;
-
-
     }
 
     @Override
@@ -48,9 +59,13 @@ public class DoublyLinkedList<Item> implements Iterable<Item> {
     private class ListIterator implements Iterator<Item>{
 
         private Node current = first;
+        private Node previous= last;
         @Override
         public boolean hasNext() {
             return current != null;
+        }
+        public boolean hasPrevious() {
+            return previous != null;
         }
 
         @Override
@@ -60,9 +75,30 @@ public class DoublyLinkedList<Item> implements Iterable<Item> {
             return item;
         }
 
+        public Item previous(){
+            current = current.prev;
+            return current.item;
+        }
+
         @Override
         public void remove() {
 
+        }
+    }
+    //test client 
+    public static void main(String[] args){
+        DoublyLinkedList<String> s = new DoublyLinkedList<>();
+        while(!StdIn.isEmpty()){
+            String item = StdIn.readString();
+            if(!item.equals("-"))
+                s.enqueue(item);
+            else if(!s.isEmpty()) StdOut.print("["+s.dequeue()+"]");
+        }
+
+        StdOut.println("(" + s.size() + " left on ths queue");
+
+        for(String item: s) {
+            StdOut.println("["+item+"]");
         }
     }
 }
