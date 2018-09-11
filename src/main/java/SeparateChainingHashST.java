@@ -1,4 +1,6 @@
-public class SeparateChainingHashST<Key,Value> {
+import java.util.Iterator;
+
+public class SeparateChainingHashST<Key,Value> implements Iterable{
     private int N;
     private int M;
     private SequentialSearchST<Key,Value>[] st;
@@ -26,16 +28,17 @@ public class SeparateChainingHashST<Key,Value> {
     public void put(Key key , Value val){
         st[hash(key)].put(key,val);
     }
-
+/*
     public Iterable<Key> keys(){
         Queue<Key> q = new Queue<Key>();
            for (int i = 0; i< M; i++)
-                q.enqueue(st[i].get());
+                //q.enqueue(st[i].get());
         return (Iterable)q;
+    }*/
+
+
+    @Override
+    public Iterator iterator() {
+        return null;
     }
-
-
-
-
-
 }
