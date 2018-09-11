@@ -76,8 +76,9 @@ public class DoublyLinkedList<Item> implements Iterable<Item> {
         }
 
         public Item previous(){
+            Item item = current.item;
             current = current.prev;
-            return current.item;
+            return item;
         }
 
         @Override
@@ -85,7 +86,7 @@ public class DoublyLinkedList<Item> implements Iterable<Item> {
 
         }
     }
-    //test client 
+    //test client
     public static void main(String[] args){
         DoublyLinkedList<String> s = new DoublyLinkedList<>();
         while(!StdIn.isEmpty()){
