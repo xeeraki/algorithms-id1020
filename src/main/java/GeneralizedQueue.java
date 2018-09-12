@@ -1,17 +1,20 @@
 import edu.princeton.cs.introcs.StdIn;
 import edu.princeton.cs.introcs.StdOut;
-
 import java.util.Iterator;
-import java.util.ListIterator;
 
-public class Queue<Item> implements Iterable<Item>{
+
+
+public class GeneralizedQueue<Item> implements Iterable<Item> {
     private Node first;
     private Node last;
     private int N;
 
+
+
     private class Node{
         Item item;
         Node next;
+        Node prev;
     }
 
     public boolean isEmpty(){
@@ -37,11 +40,31 @@ public class Queue<Item> implements Iterable<Item>{
         if(isEmpty()) last = null;
         N--;
         return item;
-
-
     }
 
+    public Item delete(int position) {
 
+       if (position == 1) {
+           Item item = first.item;
+           first = first.next;
+           if(isEmpty()) last = null;
+           N--;
+           return item;
+        } else {
+           Node previous = first;
+           int count = 1;
+           while (count < position - 1) {
+               previous = previous.next;
+               count++;
+           }
+           Node current = previous.next;
+           Item item = current.item;
+           previous.next = current.next;
+           current.next = null;
+           N--;
+           return item;
+       }
+    }
     public String toString(){
         StringBuilder st = new StringBuilder();
         for(Item item:this) {
@@ -79,21 +102,21 @@ public class Queue<Item> implements Iterable<Item>{
         }
     }
 
-
-
     public static void main(String[] args){
-        Queue<String> s = new Queue<>();
+        GeneralizedQueue<String> s = new GeneralizedQueue();
         while(!StdIn.isEmpty()){
             String item = StdIn.readString();
-            if(!item.equals("-"))
+            if(!item.equals("-")) {
                 s.enqueue(item);
-            else if(!s.isEmpty()) StdOut.print("["+s.dequeue()+"]");
+                //s.delete(2);
+            }else if(!s.isEmpty()) StdOut.print("["+s.dequeue()+"]");
         }
 
-            StdOut.println("(" + s.size() + " left on ths queue");
-
+        StdOut.println("(" + s.size() + " left on ths queue");
+        StdOut.println(s.delete(3) + " node deleted at position 2");
         for(String item: s) {
             StdOut.println("["+item+"]");
         }
+
     }
 }
