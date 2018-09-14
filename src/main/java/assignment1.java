@@ -21,7 +21,7 @@ public class assignment1 {
             a[i] = a[j];
             a[j] = temp;
         }
-
+        //print the sorted array
         private static void show(Comparable[] a){
             for(int i = 0; i < a.length; i++)
                 StdOut.print(a[i] + "");
@@ -36,7 +36,6 @@ public class assignment1 {
             return true;
 
         }
-
 
         public static void main(String[] args){
             StdOut.println("enter the input size");

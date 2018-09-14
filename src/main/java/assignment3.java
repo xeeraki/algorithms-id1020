@@ -1,9 +1,7 @@
 import edu.princeton.cs.introcs.StdIn;
 import edu.princeton.cs.introcs.StdOut;
 
-
-public class assignment2 {
-
+public class assignment3 {
     public static void sort(Comparable[]a){
         int n = a.length;
         for(int i = 1; i < n; i++){
@@ -13,21 +11,20 @@ public class assignment2 {
             }
         }
     }
-    //compare
+
     private static boolean less(Comparable v , Comparable w){
         return v.compareTo(w) < 0;
     }
-
     private static void exchange(Comparable[] a , int i , int j){
         Comparable temp = a[i];
         a[i] = a[j];
         a[j] = temp;
     }
-
+    //print the sorted array
     private static void show(Comparable[] a){
-        for(int i = 0; i < a.length; i++) {
-                StdOut.print(a[i] + "");
-        }
+        for(int i = 0; i < a.length; i++)
+            StdOut.print(a[i] + "");
+
         StdOut.println();
     }
 
@@ -43,24 +40,12 @@ public class assignment2 {
         StdOut.println("Enter the input size");
         int input = StdIn.readInt();
         String a[] = new String[input];
-
         StdOut.println("Enter the integers to be sorted");
-        for(int i = 0; i < a.length; i++) {
+        for(int i = 0; i < a.length; i++)
             a[i] = StdIn.readString();
-        }
-
         sort(a);
-        //print the sorted array
-        show(a);
-        //print the sorted array in descending order
-        System.out.println("The array in descending order");
-        for (int j = a.length - 1; j >= 0; j--) {
-            StdOut.print(a[j] + "");
-        }
-        //is the array sorted?
         assert isSorted(a);
-
-
+        show(a);
     }
 
 }
