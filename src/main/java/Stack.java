@@ -1,8 +1,11 @@
-import javax.xml.soap.Node;
+import edu.princeton.cs.introcs.StdIn;
+import edu.princeton.cs.introcs.StdOut;
+import java.util.Iterator;
 
-public class Stack<Item> {
+public class Stack<Item> implements Iterable<Item>{
 
     private Node first;
+    private Node last;
     private int N;
 
     //inner class
@@ -22,10 +25,20 @@ public class Stack<Item> {
     }
 
     public Item pop(){
-        Item item = first.item;
-        first = first.next;
+        Item item = last.item;
+        last.next=null;
         N--;
         return item;
+    }
+
+    public String toString(){
+        StringBuilder st = new StringBuilder();
+        for(Item item:this) {
+            st.append("[");
+            st.append(item);
+            st.append("]");
+        }
+        return st.toString();
     }
 
     public Boolean isEmpty(){
@@ -34,6 +47,49 @@ public class Stack<Item> {
 
     public int size(){
         return N;
+    }
+
+    public Iterator<Item> iterator() {
+        return new ListIterator();
+    }
+
+    private class ListIterator implements Iterator<Item>{
+
+        private Node current = first;
+        @Override
+        public boolean hasNext() {
+            return current != null;
+        }
+
+        @Override
+        public Item next() {
+            Item item = current.item;
+            current = current.next;
+            return item;
+        }
+
+        @Override
+        public void remove() {
+
+        }
+    }
+
+
+
+    public static void main(String[] args){
+        Stack<String> s = new Stack<>();
+        while(!StdIn.isEmpty()){
+            String item = StdIn.readString();
+            if(!item.equals("\n"))
+                s.push(item);
+            else if(!s.isEmpty()) StdOut.print(s.pop() +"");
+        }
+
+        StdOut.println("(" + s.size() + " left on ths queue");
+
+        for(String item: s) {
+            StdOut.println(item);
+        }
     }
 
 }

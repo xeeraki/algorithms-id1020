@@ -30,15 +30,15 @@ public class BalancedParenthesisFilter<Item> implements Iterable<Item> {
     public Item checkBalance(Item item) {
         for (Node x = first; x != null; x = x.next) {
             if (item.equals("(") || item.equals("{") || item.equals("[")) {
-                //push(item);
+                push(item);
                 //StdOut.println(s);
             } else if ((item.equals(")") || item.equals("}") || item.equals("]"))) {
                 if ((first.item == "(" && item.equals(")"))
                         || (first.item == "{" && item.equals("}"))
 
                         || (first.item == "[" && item.equals("]"))) {
-                    //pop();
-                    StdOut.println("balanced");
+                    pop();
+                    StdOut.println(" not balanced");
                 } else {
                     StdOut.println("not Balanced");
                 }
@@ -108,7 +108,7 @@ public class BalancedParenthesisFilter<Item> implements Iterable<Item> {
         BalancedParenthesisFilter<String> s = new BalancedParenthesisFilter<>();
         while (!StdIn.isEmpty()) {
             String item = StdIn.readString();
-            if (!item.equals(null)) {
+            if (!item.equals("-")) {
                 s.push(item);
                 s.checkBalance(item);
 

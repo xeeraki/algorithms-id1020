@@ -1,7 +1,7 @@
 import edu.princeton.cs.introcs.StdIn;
 import edu.princeton.cs.introcs.StdOut;
 
-public class InsertionSort {
+public class assignment2 {
 
     public static void sort(Comparable[]a){
         int n = a.length;
@@ -33,7 +33,7 @@ public class InsertionSort {
         for (int i = 0; i < a.length; i++)
             if (less(a[i], a[i - 1]))
                 return false;
-            return true;
+        return true;
 
     }
 
@@ -45,8 +45,10 @@ public class InsertionSort {
         StdOut.println("enter the integers to be sorted");
         for(int i = 0; i < a.length; i++)
             a[i] = StdIn.readString();
-            sort(a);
+        sort(a);
         assert isSorted(a);
         show(a);
     }
+
+
 }
