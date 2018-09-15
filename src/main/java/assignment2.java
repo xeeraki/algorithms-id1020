@@ -50,6 +50,7 @@ public class assignment2 {
         }
 
         sort(a);
+        StdOut.println("The sorted Array");
         //print the sorted array
         show(a);
         //print the sorted array in descending order

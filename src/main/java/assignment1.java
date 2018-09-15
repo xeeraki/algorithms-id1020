@@ -38,14 +38,15 @@ public class assignment1 {
         }
 
         public static void main(String[] args){
-            StdOut.println("enter the input size");
+            StdOut.println("Enter the input size");
             int input = StdIn.readInt();
             String a[] = new String[input];
-            StdOut.println("enter the integers to be sorted");
+            StdOut.println("Enter the integers to be sorted");
             for(int i = 0; i < a.length; i++)
                 a[i] = StdIn.readString();
             sort(a);
             assert isSorted(a);
+            StdOut.println("The sorted Array");
             show(a);
         }
     }
