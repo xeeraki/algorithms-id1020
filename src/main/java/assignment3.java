@@ -10,7 +10,6 @@ public class assignment3 {
                 exchange(a, j, j - 1);
                 count++;
             }
-
         }
         StdOut.println("Number of swaps "+ count);
     }
