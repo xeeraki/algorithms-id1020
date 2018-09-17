@@ -5,81 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="72623c64-2d5c-4220-bac1-e388fca90d2f" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clabfiles/assignment1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clabfiles/assignment1.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clabfiles/assignment5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clabfiles/assignment5.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clabfiles/iterative" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clabfiles/iterative.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/BST$Node.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/BST.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/Bag$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/Bag$ListIterator.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/Bag$Node.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/Bag.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/BalancedParenthesisFilter$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/BalancedParenthesisFilter$ListIterator.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/BalancedParenthesisFilter$Node.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/BalancedParenthesisFilter.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/BinarySearchST.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/CircularQueue$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/CircularQueue$ListIterator.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/CircularQueue$Node.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/CircularQueue.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/DoublyLinkedList$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/DoublyLinkedList$ListIterator.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/DoublyLinkedList$Node.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/DoublyLinkedList.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/Evaluate.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/Example.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/FixedCapacityStackStrings.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/GeneralizedQueue$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/GeneralizedQueue$ListIterator.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/GeneralizedQueue$Node.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/GeneralizedQueue.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/Graph.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/InsertionSort.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/MaxPQ$Node.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/MaxPQ.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/Queue$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/Queue$ListIterator.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/Queue$Node.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/Queue.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/Quick.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/QuickSort.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/QuickUnion.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/RandomSeq.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ResizingarrayStack$ReversArrayIterator.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ResizingarrayStack.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/SelectionSort.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/SeparateChainingHashST.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/SequentialSearchST$Node.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/SequentialSearchST.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/Stack$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/Stack$ListIterator.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/Stack$Node.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/Stack.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/Stats.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/UF.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/assignment1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/assignment2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/assignment3.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/assignment4.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/heapSort.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/mergeSort.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/slectionSorNoComparable.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/testClient.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/weightedQuickUnionUF.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/dependency-reduced-pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/original-se.kth.id1020-1.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/se.kth.id1020-1.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/testGeneralizedQueue.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/assignment3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assignment3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/assignment7.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clabfiles/assignment5.c" beforeDir="false" afterPath="$PROJECT_DIR$/clabfiles/assignment5.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Stack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Stack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Stack$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Stack$ListIterator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Stack$Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Stack.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/assignment3.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -95,13 +29,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Stack.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Stack.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Stack.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="267">
-              <caret line="76" selection-start-line="76" selection-end-line="76" />
+            <state relative-caret-position="147">
+              <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#873#874#0" expanded="true" />
+                <element signature="e#909#910#0" expanded="true" />
+                <element signature="e#933#934#0" expanded="true" />
+                <element signature="e#957#958#0" expanded="true" />
+                <element signature="e#997#998#0" expanded="true" />
+                <element signature="e#1038#1039#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -110,12 +50,55 @@
       <file leaf-file-name="assignment1.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/assignment1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
+            <state relative-caret-position="1032">
               <caret line="43" column="29" selection-start-line="43" selection-start-column="29" selection-end-line="43" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#469#470#0" expanded="true" />
                 <element signature="e#510#511#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Queue.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Queue.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="429">
+              <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MaxPQ.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/MaxPQ.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="3" column="21" lean-forward="true" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
+              <folding>
+                <element signature="e#629#630#0" expanded="true" />
+                <element signature="e#676#677#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="assignment7.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/assignment7.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-612">
+              <caret line="16" column="29" lean-forward="true" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#372#373#0" expanded="true" />
+                <element signature="e#167#168#0" expanded="true" />
+                <element signature="e#208#209#0" expanded="true" />
+                <element signature="e#484#485#0" expanded="true" />
+                <element signature="e#530#531#0" expanded="true" />
+                <element signature="e#962#971#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -213,13 +196,14 @@
         <option value="$PROJECT_DIR$/src/test/java/testGeneralizedQueue.java" />
         <option value="$PROJECT_DIR$/src/main/java/BalancedParenthesisFilter.java" />
         <option value="$PROJECT_DIR$/src/main/java/Queue.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Stack.java" />
         <option value="$PROJECT_DIR$/src/main/java/DoublyLinkedList.java" />
         <option value="$PROJECT_DIR$/src/main/java/InsertionSort.java" />
         <option value="$PROJECT_DIR$/src/main/java/assignment1.java" />
         <option value="$PROJECT_DIR$/src/main/java/assignment2.java" />
         <option value="$PROJECT_DIR$/src/main/java/assignment4.java" />
         <option value="$PROJECT_DIR$/src/main/java/assignment3.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Stack.java" />
+        <option value="$PROJECT_DIR$/src/main/java/assignment7.java" />
       </list>
     </option>
   </component>
@@ -237,10 +221,9 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="384" />
-    <option name="y" value="1438" />
-    <option name="width" value="1920" />
-    <option name="height" value="1082" />
+    <option name="y" value="-2" />
+    <option name="width" value="2560" />
+    <option name="height" value="1442" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -319,7 +302,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.assignment4">
+  <component name="RunManager" selected="Application.Stack">
     <configuration name="Stack" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Stack" />
       <module name="lab1" />
@@ -413,11 +396,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Stack" />
         <item itemvalue="Application.assignment4" />
         <item itemvalue="Application.assignment3" />
         <item itemvalue="Application.assignment2" />
         <item itemvalue="Application.assignment1" />
-        <item itemvalue="Application.Stack" />
       </list>
     </recent_temporary>
   </component>
@@ -719,7 +702,14 @@
       <option name="project" value="LOCAL" />
       <updated>1537014172371</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="assignment 5 added">
+      <created>1537091847759</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1537091847759</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -740,11 +730,12 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="433" y="1465" width="1871" height="1055" extended-state="6" />
+    <frame x="49" y="25" width="1871" height="1055" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.329718" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.3286334" />
+      <window_info active="true" anchor="bottom" id="Messages" order="7" visible="true" weight="0.3286334" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
@@ -752,7 +743,7 @@
       <window_info anchor="right" id="Maven Projects" order="3" weight="0.44548795" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.3286334" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.37418655" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.4997236" visible="true" weight="0.29392624" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.4997236" weight="0.29392624" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19616438" />
@@ -802,7 +793,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="quick find" />
     <MESSAGE value="wighted quick union" />
     <MESSAGE value="SORTING EXAMPLES" />
     <MESSAGE value="insertion sort" />
@@ -827,7 +817,8 @@
     <MESSAGE value="lab assignment" />
     <MESSAGE value="assignment 2 and 3 finalized" />
     <MESSAGE value="assignment 4" />
-    <option name="LAST_COMMIT_MESSAGE" value="assignment 4" />
+    <MESSAGE value="assignment 5 added" />
+    <option name="LAST_COMMIT_MESSAGE" value="assignment 5 added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -839,13 +830,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/Stack.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="24" column="12" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lab1.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="24">
@@ -1086,17 +1070,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/MaxPQ.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="3" column="21" lean-forward="true" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
-          <folding>
-            <element signature="e#629#630#0" expanded="true" />
-            <element signature="e#676#677#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Example.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="312">
@@ -1142,16 +1115,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
           <caret line="5" column="35" lean-forward="true" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Queue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="864">
-          <caret line="44" column="5" selection-start-line="44" selection-end-line="52" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1210,18 +1173,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/InsertionSort.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="5" column="43" lean-forward="true" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#503#504#0" expanded="true" />
-            <element signature="e#544#545#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/assignment4.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1392">
@@ -1260,7 +1211,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/assignment1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
+        <state relative-caret-position="1032">
           <caret line="43" column="29" selection-start-line="43" selection-start-column="29" selection-end-line="43" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1270,12 +1221,65 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Stack.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Queue.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="76" selection-start-line="76" selection-end-line="76" />
+        <state relative-caret-position="429">
+          <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/MaxPQ.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="3" column="21" lean-forward="true" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
+          <folding>
+            <element signature="e#629#630#0" expanded="true" />
+            <element signature="e#676#677#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/InsertionSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-168">
+          <caret line="5" column="43" lean-forward="true" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Stack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#873#874#0" expanded="true" />
+            <element signature="e#909#910#0" expanded="true" />
+            <element signature="e#933#934#0" expanded="true" />
+            <element signature="e#957#958#0" expanded="true" />
+            <element signature="e#997#998#0" expanded="true" />
+            <element signature="e#1038#1039#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/assignment7.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-612">
+          <caret line="16" column="29" lean-forward="true" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#372#373#0" expanded="true" />
+            <element signature="e#167#168#0" expanded="true" />
+            <element signature="e#208#209#0" expanded="true" />
+            <element signature="e#484#485#0" expanded="true" />
+            <element signature="e#530#531#0" expanded="true" />
+            <element signature="e#962#971#0" expanded="true" />
           </folding>
         </state>
       </provider>
