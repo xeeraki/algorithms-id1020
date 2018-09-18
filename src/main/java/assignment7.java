@@ -2,6 +2,7 @@ import java.util.*;
 
 import edu.princeton.cs.introcs.StdIn;
 import edu.princeton.cs.introcs.StdOut;
+import edu.princeton.cs.introcs.StdRandom;
 
 
 public class assignment7<Item extends Comparable> implements Iterable<Item> {
@@ -9,12 +10,10 @@ public class assignment7<Item extends Comparable> implements Iterable<Item> {
     private Node last;
     private int N;
 
-    private class Node{
+    private class Node {
         Node next;
         Node prev;
         int item;
-        public Node(int item){
-        this.item = item;}
     }
 
     public boolean isEmpty() {
@@ -29,30 +28,37 @@ public class assignment7<Item extends Comparable> implements Iterable<Item> {
         return v.compareTo(w) < 0;
     }
 
-   public void push(int item) {
-        Node newNode = new Node(item);
-        if(first == null || first.item >= newNode.item){
-
+    public void push(int item) {
+        Node newNode = new Node();
+        newNode.item = item;
+        Node current;
+        if (first == null || first.item >= newNode.item) {
             newNode.next = first;
             first = newNode;
+            StdOut.println("pushed item " + item);
+        } else {
+            current = first;
+
+            while (current.next != null &&
+                    current.next.item < newNode.item)
+                current = current.next;
+
+            newNode.next = current.next;
+            current.next = newNode;
+            N++;
+
+            StdOut.println("pushed item " + item);
         }
-       Node current = first;
+    }
 
-       while (current.next != null) {
-           current = current.next;
-           if(current.next.item < newNode.item){
 
-               newNode.next = current.next;
-               current.next = newNode;
-               StdOut.println("pushed item " + item);
-               return;
-       }
-      current = current.next;
+    public void printList(){
+        for(Node x = first; x != null; x =x.next ){
+            StdOut.print(x.item + " ");
+        }
+    }
 
-           StdOut.println("pushed item " +item);
-       }
 
-   }
     public int pop() {
         int item = first.item;
         first = first.next;
@@ -69,6 +75,7 @@ public class assignment7<Item extends Comparable> implements Iterable<Item> {
     private class ListIterator implements Iterator<Integer> {
 
         private Node current = first;
+
         @Override
         public boolean hasNext() {
             return current != null;
@@ -87,21 +94,12 @@ public class assignment7<Item extends Comparable> implements Iterable<Item> {
         }
     }
 
-
-
-
     public static void main(String[] args) {
 
         assignment7<Integer> list = new assignment7<>();
-
-                list.push(1);
-                list.push(2);
-                list.push(4);
-                list.push(3);
-                list.push(0);
-
-        for (Integer item : list) {
-            StdOut.println(list);
-        }
+        for (int i = 0; i < 6; i++)
+            list.push(StdRandom.uniform(10));
+                list.printList();
     }
+
 }
