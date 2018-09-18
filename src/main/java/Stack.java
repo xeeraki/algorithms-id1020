@@ -41,7 +41,7 @@ public class Stack<Item> implements Iterable<Item>{
         return st.toString();
     }
 
-    public boolean isEmpty(){
+    public Boolean isEmpty(){
         return first == null;
     }
 
