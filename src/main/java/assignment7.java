@@ -33,6 +33,7 @@ public class assignment7<Item extends Comparable> implements Iterable<Item> {
         newNode.item = item;
         Node current;
         if (first == null || first.item >= newNode.item) {
+            //swap
             newNode.next = first;
             first = newNode;
             StdOut.println("pushed item " + item);
@@ -42,7 +43,7 @@ public class assignment7<Item extends Comparable> implements Iterable<Item> {
             while (current.next != null &&
                     current.next.item < newNode.item)
                 current = current.next;
-
+            //swap
             newNode.next = current.next;
             current.next = newNode;
             N++;
@@ -95,11 +96,9 @@ public class assignment7<Item extends Comparable> implements Iterable<Item> {
     }
 
     public static void main(String[] args) {
-
         assignment7<Integer> list = new assignment7<>();
         for (int i = 0; i < 6; i++)
             list.push(StdRandom.uniform(10));
                 list.printList();
     }
-
 }

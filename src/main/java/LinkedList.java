@@ -27,7 +27,7 @@ public class LinkedList{
                 while (current.next != null &&
                         current.next.item < newNode.item)
                     current = current.next;
-
+                //swap
                 newNode.next = current.next;
                 current.next = newNode;
             }
@@ -72,7 +72,6 @@ public class LinkedList{
     }*/
         public static void main(String args[])
         {
-
             LinkedList list = new LinkedList();
             Node newNode;
             newNode = list.newNode(1);

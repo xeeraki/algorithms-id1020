@@ -34,18 +34,13 @@ public class QuickSort {
         }
         exch(a,lo,j);
         return j;
-
-
     }
-
     private static void sort(Comparable[] a, int lo, int hi){
         if(hi <= lo) return; // if just one  element in the array
         int j = partition(a,lo,hi);
         sort(a,lo,j-1);
         sort(a,j+1,hi);
     }
-
-
     private static void exch(Comparable[] a , int i , int j){
         Comparable temp = a[i];
         a[i] = a[j];
@@ -54,7 +49,6 @@ public class QuickSort {
     private static void show(String[] a) {
         for (int i = 0; i < a.length; i++)
             StdOut.print(a[i] + "");
-
         StdOut.println();
     }
 

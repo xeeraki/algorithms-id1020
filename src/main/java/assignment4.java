@@ -7,9 +7,10 @@ public class assignment4 {
         int n = a.length;
         for (int i = 1; i < n; i++) {
             for (int j = i; j > 0 && less(a[j], a[j - 1]); j--) {
-                show(a);
+                //show(a);
                 exchange(a, j, j - 1);
             }
+            show(a);
         }
     }
 

@@ -12,6 +12,7 @@ public class SelectionSort {
                 if(less(a[j],a[min]))
                     min = j;
             exchange(a,i,min);
+            show(a);
         }
 
     }
