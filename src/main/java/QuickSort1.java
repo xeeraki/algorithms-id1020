@@ -9,13 +9,12 @@ public class QuickSort1 {
         sort(a, p + 1, to);
     }
 
-
+//hej
     public static int partition(int[] a, int from, int to) {
 
         int i = a[from];
         int j = a[to + 1];
-
-        int mid = from + (to - from) / 2;
+        int pivot = a[from];
         while (a[i++] < a[j--]) {
             if (i == to) break;
         while (a[i++] > a[j++]) {
