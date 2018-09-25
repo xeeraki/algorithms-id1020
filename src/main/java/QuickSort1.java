@@ -9,7 +9,7 @@ public class QuickSort1 {
         sort(a, p + 1, to);
     }
 
-//hej
+//hejhej
     public static int partition(int[] a, int from, int to) {
 
         int i = a[from];
