@@ -6,10 +6,14 @@ import java.util.*;
 import java.util.Queue;
 
 public class BinarySearchST<Key extends Comparable<Key> , Value> {
-
+    private static final int INIT_CAPACITY = 2;
     private Key[] keys;
     private Value[] vals;
     private int N;
+
+    public BinarySearchST() {
+        this(INIT_CAPACITY);
+    }
 
 
     public BinarySearchST(int capacity){
@@ -60,6 +64,8 @@ public class BinarySearchST<Key extends Comparable<Key> , Value> {
         vals[i] = val;
         N++;
     }
+
+
 
     public void delete(Key key){
 

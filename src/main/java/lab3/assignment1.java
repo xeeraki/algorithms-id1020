@@ -3,11 +3,9 @@ package lab3;
 import edu.princeton.cs.algs4.Queue;
 import edu.princeton.cs.introcs.StdOut;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 
-public class assignment1<Key , Value>{
+public class assignment1<Key extends Comparable<Key>, Value> {
 
     private Node first;
     private int N;
@@ -92,19 +90,23 @@ public class assignment1<Key , Value>{
 
     public static void main(String[] args) throws IOException {
         assignment1<Character, Integer> st = new assignment1<Character, Integer>();
-
-        BufferedReader file = new BufferedReader(new FileReader("gutenberg.txt"));
+        BufferedReader reader = new BufferedReader(new FileReader("gutenberg.txt"));
         String key;
-        while ((key = file.readLine())!=null) {
+        while ((key = reader.readLine()) != null) {
             for (int i = 0; i != key.length(); i++) {
                 char c = key.charAt(i);
                 if (!Character.isLetter(c)) {
                     c = ' ';
                 }
-                st.put(c, st.contains(c) ? st.get(c) + 1 : 1);
-                for (Character s : st.keys())
-                    StdOut.println(s +" " +st.get(s));
+                if (!st.contains(c)) st.put(c, 1);
+                else
+                    st.put(c, st.get(c) + 1);
+                //st.put(c, st.contains(c) ? st.get(c) + 1 : 1);
+
             }
         }
+        for (Character s : st.keys())
+            StdOut.println(s + " " + st.get(s));
+
     }
 }

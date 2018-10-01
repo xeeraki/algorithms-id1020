@@ -175,4 +175,19 @@ public class BST<Key extends  Comparable<Key> , Value >{
         if (cmphi > 0) keys(x.right, queue, lo, hi);
     }
 
+
+    public Iterable<Key> levelOrder() {
+        Queue<Key> keys = new Queue<Key>();
+        Queue<Node> queue = new Queue<Node>();
+        queue.enqueue(root);
+        while (!queue.isEmpty()) {
+            Node x = queue.dequeue();
+            if (x == null) continue;
+            keys.enqueue(x.key);
+            queue.enqueue(x.left);
+            queue.enqueue(x.right);
+        }
+        return keys;
+    }
+
 }
