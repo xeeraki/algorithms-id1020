@@ -1,21 +1,21 @@
 package lab3;
-/*
- * algorithm 3.3 BST binary search tree is used.
- * This algorithms running time is compared to the algorithm 3.2 which use Binary search in an ordered array
- * and obtained that ...
+/*************************************************************************************************************
+ *   algorithm 3.3 BST binary search tree is used.
+ *   This algorithms running time is compared to the algorithm 3.2 which use Binary search in an ordered array
+ *   and obtained that ...
  *
- * The running time using stopwatch for gutenberg.txt
- *distinct = 12448
-words    = 12448
-elapsed time = 0.003
+ *   The running time using stopwatch for gutenberg.txt
+ *   distinct = 95
+ *   words    = 12652
+ *   elapsed time = 0.002
+ *
+ *   The running time for leipzig100k.tx
+ *   words    = 100000
+ *   elapsed time = 0.004
+ *
+ *   This algorithm is faster than the binary search in an ordered array algorithm
+ * ************************************************************************************************************/
 
-The running time for leipzig100k.tx
-distinct = 100000
-words    = 100000
-elapsed time = 0.004
- *
- *
- * */
 import edu.princeton.cs.algs4.Queue;
 import edu.princeton.cs.algs4.Stopwatch;
 import edu.princeton.cs.introcs.StdOut;
@@ -23,8 +23,10 @@ import edu.princeton.cs.introcs.StdOut;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.Scanner;
 
-public class assignment2_1 <Key extends  Comparable<Key> , Value > {
+public class assignment2_1<Key extends Comparable<Key>, Value>{
+
 
     private Node root;
 
@@ -33,13 +35,13 @@ public class assignment2_1 <Key extends  Comparable<Key> , Value > {
         private Value val;
         private Node left;
         private Node right;
-        private int N;
+        private int size;
 
 
-        public Node(Key key, Value val, int N) {
+        public Node(Key key, Value val, int size) {
             this.key = key;
             this.val = val;
-            this.N = N;
+            this.size = size;
         }
     }
 
@@ -49,7 +51,7 @@ public class assignment2_1 <Key extends  Comparable<Key> , Value > {
 
     private int size(Node x) {
         if (x == null) return 0;
-        else return x.N;
+        else return x.size;
     }
 
     public Value get(Key key) {
@@ -59,12 +61,9 @@ public class assignment2_1 <Key extends  Comparable<Key> , Value > {
     private Value get(Node x, Key key) {
         if (x == null) return null;
         int cmp = key.compareTo(x.key);
-        if (cmp < 0)
-            return get(x.left, key);
-        else if (cmp > 0)
-            return get(x.right, key);
+        if (cmp < 0) return get(x.left, key);
+        else if (cmp > 0) return get(x.right, key);
         else return x.val;
-
     }
 
     public void put(Key key, Value val) {
@@ -74,12 +73,11 @@ public class assignment2_1 <Key extends  Comparable<Key> , Value > {
     private Node put(Node x, Key key, Value val) {
         if (x == null) return new Node(key, val, 1);
         int cmp = key.compareTo(x.key);
-        if (cmp < 0) return put(x.left, key, val);
-        else if (cmp > 0) return put(x.right, key, val);
+        if (cmp < 0) x.left = put(x.left, key, val);
+        else if (cmp > 0) x.right = put(x.right, key, val);
         else x.val = val;
-        x.N = size(x.left) + size(x.right) + 1;
+        x.size = 1 + size(x.left) + size(x.right);
         return x;
-
     }
 
 
@@ -140,14 +138,12 @@ public class assignment2_1 <Key extends  Comparable<Key> , Value > {
         return rank(key, root);
     }
 
-    private int rank(Key key, Node x) { // Return number of keys less than x.key in the subtree rooted at x.
+    private int rank(Key key, Node x) {
         if (x == null) return 0;
         int cmp = key.compareTo(x.key);
-        if
-                (cmp < 0) return rank(key, x.left);
+        if (cmp < 0) return rank(key, x.left);
         else if (cmp > 0) return 1 + size(x.left) + rank(key, x.right);
-        else
-            return size(x.left);
+        else return size(x.left);
     }
 
     public void deleteMin() {
@@ -157,7 +153,7 @@ public class assignment2_1 <Key extends  Comparable<Key> , Value > {
     private Node deleteMin(Node x) {
         if (x.left == null) return x.right;
         x.left = deleteMin(x.left);
-        x.N = size(x.left) + size(x.right) + 1;
+        x.size = size(x.left) + size(x.right) + 1;
         return x;
     }
 
@@ -165,6 +161,7 @@ public class assignment2_1 <Key extends  Comparable<Key> , Value > {
         if (key == null) ;
         return get(key) != null;
     }
+
     public void delete(Key key) {
         root = delete(root, key);
     }
@@ -183,7 +180,7 @@ public class assignment2_1 <Key extends  Comparable<Key> , Value > {
             x.right = deleteMin(t.right);
             x.left = t.left;
         }
-        x.N = size(x.left) + size(x.right) + 1;
+        x.size = size(x.left) + size(x.right) + 1;
         return x;
     }
 
@@ -207,24 +204,28 @@ public class assignment2_1 <Key extends  Comparable<Key> , Value > {
     }
 
 
-
-
-
     public static void main(String[] args) throws IOException {
         int distinct = 0, words = 0;
-        int minlen = 8;
-        // key-length cutoff
         assignment2_1<String, Integer> st = new assignment2_1<String, Integer>();
-        BufferedReader reader = new BufferedReader(new FileReader("leipzig100K.txt"));
+        Scanner scan = new Scanner(System.in);
+        int minlen = scan.nextInt(); // length cutoff
+        //int maxlen = scan.nextInt();
+
+        BufferedReader reader = new BufferedReader(new FileReader("gutenberg.txt"));
         // compute frequency countsString key;
         String key;
-        while ((key = reader.readLine())!= null) { // Build symbol table and count frequencies.
-            if (key.length() < minlen) continue; // Ignore short keys.
+        while ((key = reader.readLine()) != null) { // Build symbol table and count frequencies.
+
+            if ((key.length() < minlen))
+                continue;
+            // Ignore keys out of this range.
             words++;
-            if (!st.contains(key)) st.put(key, 1);
-            else
+            if (!st.contains(key)) {
+                st.put(key, 1);
+            } else {
                 st.put(key, st.get(key) + 1);
-            distinct++;
+                distinct++;
+            }
         }
 // Find a key with the highest frequency count.
         String max = "";
