@@ -151,7 +151,8 @@ public class assignment1<Key extends Comparable<Key>, Value> {
         while ((key = reader.readLine()) != null) {
             for (int i = 0; i != key.length(); i++) {
                 char c = key.charAt(i);
-                if (!Character.isLetter(c)) {
+                if (!Character.isLetter(c) || c == ' ' || c == '\n'){
+
                     c = ' ';
                 }
                 if (!st.contains(c)) st.put(c, 1);

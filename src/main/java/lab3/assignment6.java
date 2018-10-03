@@ -8,7 +8,9 @@ import edu.princeton.cs.introcs.StdIn;
 import edu.princeton.cs.introcs.StdOut;
 
 import java.io.*;
-import java.util.Scanner;
+import java.util.*;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class assignment6 {
 
@@ -16,39 +18,43 @@ public class assignment6 {
     }
 
     public static void main(String[] args) throws IOException {
-    // key = word, value = set of files containing that word
-    ST<String, SET<File>> st = new ST<String, SET<File>>();
-        BufferedReader reader = new BufferedReader(new FileReader("gutenberg.txt"));
-    // create inverted index of all files
-        StdOut.println("Indexing files");
-        for (String filename : args) {
-        StdOut.println("  " + filename);
-        File file = new File(filename);
-        In in = new In(file);
-        while (!in.isEmpty()) {
-            String word = in.readString();
-            if (!st.contains(word)) st.put(word, new SET<File>());
-            SET<File> set = st.get(word); String query = StdIn.readString();
-            set.add(file);
-        }
-    }
+        Map<String, List<Integer>> occurences = new HashMap<>();
 
-
-    // read queries from standard input, one per line
-
-        // compute frequency countsString key;
-        String query;
-        while ((query = reader.readLine()) != null) {
-        if (st.contains(query)) {
-            SET<File> set = st.get(query);
-            for (File file : set) {
-                StdOut.println("  " + file.getName());
+        LineNumberReader reader = new LineNumberReader(new FileReader("gutenberg.txt"));
+        // create inverted index of all files
+        StdOut.println("Enter the search word");
+        Scanner scan = new Scanner(System.in);
+        String query = scan.nextLine();
+        String line;
+        int count = 0;
+        while ((line = reader.readLine()) != null) {
+            String[] words = line.split(" ");
+            for (String word : words) {
+                if (word.equalsIgnoreCase(query)) {
+                    List<Integer> list = occurences.get(word);
+                    if (list == null) {
+                        list = new ArrayList<>();
+                        occurences.put(word, list);
+                        list.add(count);
+                    }
+                    list.add(count);
+                    count++;
+                    for (int i = 0; i < list.size(); i++) {
+                        if (list.indexOf(query) != -1) ;
+                        StdOut.println("Word found at line " + reader.getLineNumber() + " position at  " + i);
+                    }
+                }
             }
         }
+
+        StdOut.println("The word " + query + " appears " + count + " times." );
     }
-
 }
 
-}
+
+
+
+
+
 
 

@@ -5,15 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="72623c64-2d5c-4220-bac1-e388fca90d2f" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/lab3/assignment4.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lab3/assignment5.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lab3/assignment6.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lab3/assignment7.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/lab3/assignment1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lab3/assignment1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lab3/assignment2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lab3/assignment2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lab3/assignment2_1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lab3/assignment2_1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lab3/assignment3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lab3/assignment3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lab3/assignment6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lab3/assignment6.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -38,11 +32,23 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="assignment1.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/lab3/assignment1.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1320">
+              <caret line="14" column="8" lean-forward="true" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="assignment2_1.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/lab3/assignment2_1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="47">
-              <caret line="213" column="7" selection-start-line="213" selection-start-column="7" selection-end-line="216" selection-end-column="52" />
+            <state relative-caret-position="383">
+              <caret line="227" column="13" lean-forward="true" selection-start-line="227" selection-start-column="13" selection-end-line="227" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -71,7 +77,7 @@
       <file leaf-file-name="assignment2.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/lab3/assignment2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3669">
+            <state relative-caret-position="-3525">
               <caret line="17" column="66" selection-start-line="17" selection-start-column="66" selection-end-line="17" selection-end-column="66" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -92,14 +98,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="assignment6.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="assignment6.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/lab3/assignment6.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="174">
-              <caret line="23" column="38" lean-forward="true" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
+            <state relative-caret-position="360">
+              <caret line="27" column="20" lean-forward="true" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#412#431#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -196,7 +201,6 @@
         <option value="$PROJECT_DIR$/src/main/java/BinarySearchST.java" />
         <option value="$PROJECT_DIR$/src/main/java/BST.java" />
         <option value="$PROJECT_DIR$/src/main/java/lab3/FrequencyCounter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lab3/assignment1.java" />
         <option value="$PROJECT_DIR$/src/main/java/lab3/ReeatedWordInFile.java" />
         <option value="$PROJECT_DIR$/src/main/java/lab3/RepeatedWordInFile.java" />
         <option value="$PROJECT_DIR$/src/main/java/lab3/assignment2.java" />
@@ -204,6 +208,7 @@
         <option value="$PROJECT_DIR$/src/main/java/lab3/assignment2_1.java" />
         <option value="$PROJECT_DIR$/src/main/java/lab3/assignment3.java" />
         <option value="$PROJECT_DIR$/src/main/java/lab3/assignment6.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lab3/assignment1.java" />
       </list>
     </option>
   </component>
@@ -304,9 +309,12 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.assignment6">
-    <configuration name="RepeatedWordInFile" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lab3.RepeatedWordInFile" />
+  <component name="RunManager" selected="Application.assignment1">
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="assignment1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lab3.assignment1" />
       <module name="lab1" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -315,9 +323,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-    </configuration>
-    <configuration default="true" type="Application" factoryName="Application">
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
     <configuration name="assignment2_1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="lab3.assignment2_1" />
@@ -421,18 +426,18 @@
     <list>
       <item itemvalue="JUnit.All in lab1" />
       <item itemvalue="Application.assignment3" />
-      <item itemvalue="Application.RepeatedWordInFile" />
       <item itemvalue="Application.assignment4" />
       <item itemvalue="Application.assignment2_1" />
       <item itemvalue="Application.assignment6" />
+      <item itemvalue="Application.assignment1" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.assignment1" />
         <item itemvalue="Application.assignment6" />
         <item itemvalue="Application.assignment2_1" />
         <item itemvalue="Application.assignment4" />
         <item itemvalue="Application.assignment3" />
-        <item itemvalue="Application.RepeatedWordInFile" />
       </list>
     </recent_temporary>
   </component>
@@ -446,13 +451,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1532430222994</updated>
-    </task>
-    <task id="LOCAL-00003" summary="added some new java code">
-      <created>1532988075323</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1532988075323</updated>
     </task>
     <task id="LOCAL-00004" summary="chapter one">
       <created>1533122836583</created>
@@ -790,7 +788,14 @@
       <option name="project" value="LOCAL" />
       <updated>1538431437361</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="file indexing">
+      <created>1538519716396</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1538519716397</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -823,7 +828,7 @@
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5002764" side_tool="true" weight="0.32948583" />
       <window_info anchor="right" id="Maven Projects" order="3" weight="0.44548795" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.3286334" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2570499" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.44143167" />
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.4997236" weight="0.3438178" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
@@ -874,7 +879,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="merge sort modified" />
     <MESSAGE value="comments added to quicksort and merge sort algorithm" />
     <MESSAGE value="priority queue" />
     <MESSAGE value="heap ordered priority queue" />
@@ -899,7 +903,8 @@
     <MESSAGE value="quick sort" />
     <MESSAGE value="Binary search Symbol table" />
     <MESSAGE value="running time of algorithm using stopwatch" />
-    <option name="LAST_COMMIT_MESSAGE" value="running time of algorithm using stopwatch" />
+    <MESSAGE value="file indexing" />
+    <option name="LAST_COMMIT_MESSAGE" value="file indexing" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1076,6 +1081,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1168,16 +1176,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lab3/assignment1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3720">
-          <caret line="164" column="48" selection-start-line="164" selection-start-column="48" selection-end-line="164" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/lab3/RepeatedWordInFile.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="912">
@@ -1209,20 +1207,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lab3/assignment2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3669">
-          <caret line="17" column="66" selection-start-line="17" selection-start-column="66" selection-end-line="17" selection-end-column="66" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Graph.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="675">
           <caret line="40" column="22" selection-start-line="40" selection-start-column="22" selection-end-line="40" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lab3/assignment7.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lab3/assignment6.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="27" column="20" lean-forward="true" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1236,10 +1241,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lab3/assignment2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3525">
+          <caret line="17" column="66" selection-start-line="17" selection-start-column="66" selection-end-line="17" selection-end-column="66" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/SeparateChainingHashST.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lab3/assignment2_1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="383">
+          <caret line="227" column="13" lean-forward="true" selection-start-line="227" selection-start-column="13" selection-end-line="227" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1250,30 +1275,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lab3/assignment7.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/lab3/assignment1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lab3/assignment2_1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="47">
-          <caret line="213" column="7" selection-start-line="213" selection-start-column="7" selection-end-line="216" selection-end-column="52" />
+        <state relative-caret-position="-1320">
+          <caret line="14" column="8" lean-forward="true" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lab3/assignment6.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="23" column="38" lean-forward="true" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#412#431#0" expanded="true" />
           </folding>
         </state>
       </provider>
