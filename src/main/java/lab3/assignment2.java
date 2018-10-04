@@ -1,26 +1,12 @@
 package lab3;
-/******************************************************************************************
- * algorithm 3.2  binary search is used in an ordered array.
- * This algorithms running time is compared to the algorithm 3.3 BST which use Binary search tree
- * and obtained that ...
- *
- * The running time using stop watch with leipzig100k.txt
- * words    = 100000
- * elapsed time = 72.226 s
- *
- *
- * The running time for gutenberg.txt
- * distinct = 95
- * words    = 12652
- * elapsed time = 2.0 s
- *
- *
- * This algorithm is much more slow compared to the algorithm BST.
-* *****************************************************************************************************/
+/***************************************************************************************************
+ * To run the main method user need to provide a.txt file in the same directory as the project
+ * The text file name should be given inside FileReader
+ * The user need to enter an arbitrary length cutoff integer.
+ * The text file used for measurement from http://www.gutenberg.org/files/98/98-0.txt
+ ****************************************************************************************************/
 import edu.princeton.cs.algs4.Queue;
-import edu.princeton.cs.algs4.ST;
 import edu.princeton.cs.algs4.Stopwatch;
-import edu.princeton.cs.introcs.StdIn;
 import edu.princeton.cs.introcs.StdOut;
 
 import java.io.*;
@@ -88,11 +74,6 @@ public class assignment2<Key extends Comparable<Key>, Value> {
     // See page 381.
     public void put(Key key, Value val) { // Search for key. Update value if found; grow table if new.
         int i = rank(key);
-        if (val == null) {
-            delete(key);
-            return;
-        }
-
         //if key already in the table
         if (i < N && keys[i].compareTo(key) == 0) {
             vals[i] = val;
@@ -109,43 +90,16 @@ public class assignment2<Key extends Comparable<Key>, Value> {
         vals[i] = val;
         N++;
     }
-    public void delete(Key key) {
-        if (key == null) throw new IllegalArgumentException("argument to delete() is null");
-        if (isEmpty()) return;
-
-        // compute rank
-        int i = rank(key);
-
-        // key not in table
-        if (i == N || keys[i].compareTo(key) != 0) {
-            return;
-        }
-
-        for (int j = i; j < N-1; j++)  {
-            keys[j] = keys[j+1];
-            vals[j] = vals[j+1];
-        }
-
-        N--;
-        keys[N] = null;  // to avoid loitering
-        vals[N] = null;
-
-        // resize if 1/4 full
-        if (N > 0 && N == keys.length/4) resize(keys.length/2);
-
-    }
     public boolean contains(Key key) {
         if (key == null) ;
         return get(key) != null;
     }
     public Key min() {
-        if (isEmpty());
         return keys[0];
     }
 
 
     public Key max() {
-        if (isEmpty());
         return keys[N-1];
     }
 
@@ -155,9 +109,6 @@ public class assignment2<Key extends Comparable<Key>, Value> {
     }
 
     public Iterable<Key> keys(Key lo, Key hi) {
-        if (lo == null) throw new IllegalArgumentException("first argument to keys() is null");
-        if (hi == null) throw new IllegalArgumentException("second argument to keys() is null");
-
         Queue<Key> queue = new Queue<Key>();
         if (lo.compareTo(hi) > 0) return queue;
         for (int i = rank(lo); i < rank(hi); i++)
@@ -175,24 +126,30 @@ public class assignment2<Key extends Comparable<Key>, Value> {
 
         Stopwatch timer = new Stopwatch();
         BufferedReader reader = new BufferedReader(new FileReader("gutenberg.txt"));
-        // compute frequency countsString key;
         String key;
-        while ((key = reader.readLine())!= null) { // Build symbol table and count frequencies.
-            if (key.length() < minlen) continue; // Ignore short keys.
-            words++;
-            if (!st.contains(key)) {
-                st.put(key, 1);
-            } else {
-                st.put(key, st.get(key) + 1);
-                distinct++;
+        while ((key = reader.readLine())!= null){
+            String[] keys = key.split(" ");
+            for (String word : keys) {
+                if ((word.length() < minlen))
+                    continue;
+                // Ignore keys out of this range.
+                words++;
+                if (!st.contains(word)) {
+                    st.put(word, 1);
+                } else {
+                    st.put(word, st.get(word) + 1);
+                    distinct++;
+                }
             }
         }
 // Find a key with the highest frequency count.
         String max = "";
         st.put(max, 0);
-        for (String word : st.keys())
-            if (st.get(word) > st.get(max))
+        for (String word : st.keys()) {
+            if (st.get(word) > st.get(max)) {
                 max = word;
+            }
+        }
         StdOut.println(max + " " + st.get(max));
         StdOut.println("distinct = " + distinct);
         StdOut.println("words    = " + words);

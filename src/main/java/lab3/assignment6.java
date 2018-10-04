@@ -1,4 +1,10 @@
 package lab3;
+/***************************************************************************************************
+ * To run the main method user need to provide a.txt file in the same directory as the project
+ * The text file name should be given inside FileReader
+ * The user need to enter an arbitrary word to search for.
+ * The text file used for measurement from http://www.gutenberg.org/files/98/98-0.txt
+ ****************************************************************************************************/
 
 import edu.princeton.cs.algs4.Queue;
 import edu.princeton.cs.algs4.SET;
@@ -39,15 +45,11 @@ public class assignment6 {
                     }
                     list.add(count);
                     count++;
-                    for (int i = 0; i < list.size(); i++) {
-                        if (list.indexOf(query) != -1) ;
-                        StdOut.println("Word found at line " + reader.getLineNumber() + " position at  " + i);
-                    }
+                    StdOut.println("Word found at position " + reader.getLineNumber());
                 }
             }
         }
-
-        StdOut.println("The word " + query + " appears " + count + " times." );
+        StdOut.println("The word " + query + " appears " + count + " times.");
     }
 }
 
