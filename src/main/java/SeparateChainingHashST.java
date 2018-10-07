@@ -26,15 +26,11 @@ public class SeparateChainingHashST<Key,Value> implements Iterable{
     }
 
     public void put(Key key , Value val){
-        st[hash(key)].put(key,val);
+        int i = hash(key);
+        if(!st[i].contains(key))
+        st[i].put(key,val);
     }
-/*
-    public Iterable<Key> keys(){
-        Queue<Key> q = new Queue<Key>();
-           for (int i = 0; i< M; i++)
-                //q.enqueue(st[i].get());
-        return (Iterable)q;
-    }*/
+
 
 
     @Override
