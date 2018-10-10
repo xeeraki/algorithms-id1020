@@ -18,7 +18,7 @@
             <configuration>
               <transformers>
                 <transformer>
-                  <mainClass>se.kth.id1020.RandomSeq</mainClass>
+                  <mainClass>se.kth.id1020.Graph</mainClass>
                 </transformer>
               </transformers>
             </configuration>

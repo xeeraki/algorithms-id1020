@@ -38,7 +38,7 @@ public class assignment6 {
             for (String word : words) {
                 if (word.equalsIgnoreCase(query)) {
                     List<Integer> list = occurences.get(word);
-                    if (list == null) {
+                    if(list == null) {
                         list = new ArrayList<>();
                         occurences.put(word, list);
                         list.add(count);

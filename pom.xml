@@ -25,12 +25,21 @@
             <artifactId>stdlib-package</artifactId>
             <version>1.0</version>
         </dependency>
-    <dependency>
+
+        <!-- https://mvnrepository.com/artifact/com.googlecode.princeton-java-algorithms/algorithms -->
+        <dependency>
+            <groupId>com.googlecode.princeton-java-algorithms</groupId>
+            <artifactId>algorithms</artifactId>
+            <version>4.0.1</version>
+        </dependency>
+
+        <dependency>
         <groupId>junit</groupId>
         <artifactId>junit</artifactId>
         <version>4.10</version>
         <scope>test</scope>
     </dependency>
+
 </dependencies>
 <build>
 <plugins>
@@ -48,7 +57,7 @@
                     <transformers>
                         <transformer
                                 implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-                            <mainClass>se.kth.id1020.RandomSeq</mainClass>
+                            <mainClass>se.kth.id1020.Graph</mainClass>
                         </transformer>
                     </transformers>
                 </configuration>
