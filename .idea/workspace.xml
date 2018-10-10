@@ -5,21 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="72623c64-2d5c-4220-bac1-e388fca90d2f" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/lab4/assignment2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lab4/Edge.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lab4/EdgeWeightedGraph.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lab4/MST.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lab4/PrimMST.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lab4/assignment5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lab4/assignment6.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Graph.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lab3/assignment6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lab3/assignment6.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lab4/assignment1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lab4/assignment1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Graph.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/assignment1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/assignment2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/assignment4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dependency-reduced-pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/dependency-reduced-pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/original-se.kth.id1020-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/original-se.kth.id1020-1.0.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/se.kth.id1020-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/se.kth.id1020-1.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lab4/assignment2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lab4/assignment2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lab4/assignment3.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -38,8 +32,22 @@
       <file leaf-file-name="assignment1.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/lab4/assignment1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1272">
-              <caret line="55" column="33" lean-forward="true" selection-start-line="55" selection-start-column="33" selection-end-line="55" selection-end-column="33" />
+            <state relative-caret-position="408">
+              <caret line="50" column="52" selection-start-line="50" selection-start-column="52" selection-end-line="50" selection-end-column="52" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#821#822#0" expanded="true" />
+                <element signature="e#853#854#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="assignment2.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/lab4/assignment2.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="267">
+              <caret line="73" column="27" selection-start-line="70" selection-start-column="8" selection-end-line="74" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -47,13 +55,80 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="assignment2.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/lab4/assignment2.java">
+      <file leaf-file-name="Edge.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/lab4/Edge.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="120" column="34" selection-start-line="120" selection-start-column="34" selection-end-line="120" selection-end-column="34" />
+            <state relative-caret-position="648">
+              <caret line="27" selection-start-line="27" selection-end-line="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EdgeWeightedGraph.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/lab4/EdgeWeightedGraph.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="205">
+              <caret line="24" selection-start-line="24" selection-end-line="24" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1306#1312#0" expanded="true" />
+                <element signature="e#999#1000#0" expanded="true" />
+                <element signature="e#1023#1024#0" expanded="true" />
+                <element signature="e#1044#1045#0" expanded="true" />
+                <element signature="e#1068#1069#0" expanded="true" />
+                <element signature="e#1094#1095#0" expanded="true" />
+                <element signature="e#1123#1124#0" expanded="true" />
+                <element signature="e#1188#1194#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PrimMST.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/lab4/PrimMST.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="456">
+              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2073#2079#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="assignment5.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/lab4/assignment5.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2448">
+              <caret line="108" column="52" lean-forward="true" selection-start-line="108" selection-start-column="52" selection-end-line="108" selection-end-column="52" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1631#1640#0" expanded="true" />
+                <element signature="e#2183#2192#0" expanded="true" />
+                <element signature="e#3863#3872#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="assignment6.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/lab4/assignment6.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="48">
+              <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MST.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/lab4/MST.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#833#839#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -62,8 +137,8 @@
       <file leaf-file-name="Graph.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/lab4/Graph.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="14" column="25" lean-forward="true" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+            <state relative-caret-position="2640">
+              <caret line="155" selection-start-line="155" selection-end-line="155" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#4894#4903#0" expanded="true" />
@@ -100,13 +175,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/slectionSorNoComparable.java" />
-        <option value="$PROJECT_DIR$/src/main/java/mergeSort.java" />
-        <option value="$PROJECT_DIR$/src/main/java/MaxPQ.java" />
-        <option value="$PROJECT_DIR$/src/main/java/heapSort.java" />
-        <option value="$PROJECT_DIR$/src/main/java/SequensialSearchST.java" />
-        <option value="$PROJECT_DIR$/src/main/java/binarySearchST.java" />
-        <option value="$PROJECT_DIR$/src/main/java/doublyLinkedList.java" />
         <option value="$PROJECT_DIR$/src/main/java/bookSiteQueue.java" />
         <option value="$PROJECT_DIR$/src/main/java/CircularQueue.java" />
         <option value="$PROJECT_DIR$/src/main/java/GeneralizedQueue.java" />
@@ -147,10 +215,17 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/lab3/assignment6.java" />
         <option value="$PROJECT_DIR$/src/main/java/Graph.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lab4/Graph.java" />
         <option value="$PROJECT_DIR$/src/main/java/BreadthFirstPaths.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lab4/assignment2.java" />
         <option value="$PROJECT_DIR$/src/main/java/lab4/assignment1.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lab4/assignment3.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lab4/EdgeWeigthedGraph.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lab4/MST.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lab4/Graph.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lab4/Edge.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lab4/assignment2.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lab4/EdgeWeightedGraph.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lab4/PrimMST.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lab4/assignment5.java" />
       </list>
     </option>
   </component>
@@ -217,14 +292,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="lab3" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lab1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lab1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="lab4" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -246,6 +313,11 @@
     <property name="project.structure.side.proportion" value="0.4328524" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="lab4" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -258,34 +330,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.assignment2">
-    <configuration name="BalancedParenthesisFilter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="BalancedParenthesisFilter" />
-      <module name="lab1" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-    </configuration>
-    <configuration name="BreadthFirstPaths" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="BreadthFirstPaths" />
-      <module name="lab1" />
-      <option name="PROGRAM_PARAMETERS" value="4" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-    </configuration>
-    <configuration default="true" type="Application" factoryName="Application">
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-    </configuration>
-    <configuration name="assignment1 (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lab3.assignment1" />
-      <module name="lab1" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="lab3.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-    </configuration>
-    <configuration name="assignment1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lab4.assignment1" />
+  <component name="RunManager" selected="Application.assignment5">
+    <configuration name="EdgeWeightedGraph" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lab4.EdgeWeightedGraph" />
       <module name="lab1" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -295,8 +342,44 @@
         </pattern>
       </extension>
     </configuration>
+    <configuration name="Graph" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lab4.Graph" />
+      <module name="lab1" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lab4.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="PrimMST" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lab4.PrimMST" />
+      <module name="lab1" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lab4.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
     <configuration name="assignment2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="lab4.assignment2" />
+      <module name="lab1" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lab4.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="assignment5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lab4.assignment5" />
       <module name="lab1" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -363,19 +446,19 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.All in lab1" />
-      <item itemvalue="Application.assignment1" />
-      <item itemvalue="Application.BalancedParenthesisFilter" />
-      <item itemvalue="Application.BreadthFirstPaths" />
-      <item itemvalue="Application.assignment1 (1)" />
       <item itemvalue="Application.assignment2" />
+      <item itemvalue="Application.EdgeWeightedGraph" />
+      <item itemvalue="Application.Graph" />
+      <item itemvalue="Application.PrimMST" />
+      <item itemvalue="Application.assignment5" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.assignment5" />
+        <item itemvalue="Application.PrimMST" />
+        <item itemvalue="Application.EdgeWeightedGraph" />
         <item itemvalue="Application.assignment2" />
-        <item itemvalue="Application.assignment1" />
-        <item itemvalue="Application.BreadthFirstPaths" />
-        <item itemvalue="Application.assignment1 (1)" />
-        <item itemvalue="Application.BalancedParenthesisFilter" />
+        <item itemvalue="Application.Graph" />
       </list>
     </recent_temporary>
   </component>
@@ -389,13 +472,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1532430222994</updated>
-    </task>
-    <task id="LOCAL-00009" summary="wighted quick union">
-      <created>1533376460422</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1533376460422</updated>
     </task>
     <task id="LOCAL-00010" summary="SORTING EXAMPLES">
       <created>1533554859379</created>
@@ -733,7 +809,14 @@
       <option name="project" value="LOCAL" />
       <updated>1538984644386</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="BSF shortest path">
+      <created>1539194247712</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1539194247714</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -766,11 +849,11 @@
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5002764" side_tool="true" weight="0.32948583" />
       <window_info anchor="right" id="Maven Projects" order="3" weight="0.44548795" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.3286334" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.39262474" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.4997236" visible="true" weight="0.329718" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.27006507" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.4997236" weight="0.329718" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21369863" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21369863" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.329718" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.2498618" />
@@ -817,7 +900,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="heap sort" />
     <MESSAGE value="Sequential search using linked list" />
     <MESSAGE value="some new methods added" />
     <MESSAGE value="binary search tree" />
@@ -842,7 +924,8 @@
     <MESSAGE value="assignment 7 added" />
     <MESSAGE value="DFS graph" />
     <MESSAGE value="DFS search" />
-    <option name="LAST_COMMIT_MESSAGE" value="DFS search" />
+    <MESSAGE value="BSF shortest path" />
+    <option name="LAST_COMMIT_MESSAGE" value="BSF shortest path" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -854,46 +937,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/Evaluate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="5" column="35" lean-forward="true" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/testGeneralizedQueue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/InsertionSort.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-168">
-          <caret line="5" column="43" lean-forward="true" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/MaxPQ.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="3" column="21" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
-          <folding>
-            <element signature="e#629#630#0" expanded="true" />
-            <element signature="e#676#677#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/IntSortedLinkedList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="123" lean-forward="true" selection-start-line="123" selection-end-line="123" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/DoublyLinkedListalg4.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/Stack.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -1223,10 +1266,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lab4/assignment1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="50" column="52" selection-start-line="50" selection-start-column="52" selection-end-line="50" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#821#822#0" expanded="true" />
+            <element signature="e#853#854#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/lab4/Graph.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="14" column="25" lean-forward="true" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+        <state relative-caret-position="2640">
+          <caret line="155" selection-start-line="155" selection-end-line="155" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#4894#4903#0" expanded="true" />
@@ -1238,23 +1293,80 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lab4/assignment1.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/lab4/Edge.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1272">
-          <caret line="55" column="33" lean-forward="true" selection-start-line="55" selection-start-column="33" selection-end-line="55" selection-end-column="33" />
+        <state relative-caret-position="648">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lab4/EdgeWeightedGraph.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1306#1312#0" expanded="true" />
+            <element signature="e#999#1000#0" expanded="true" />
+            <element signature="e#1023#1024#0" expanded="true" />
+            <element signature="e#1044#1045#0" expanded="true" />
+            <element signature="e#1068#1069#0" expanded="true" />
+            <element signature="e#1094#1095#0" expanded="true" />
+            <element signature="e#1123#1124#0" expanded="true" />
+            <element signature="e#1188#1194#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/lab4/assignment2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="120" column="34" selection-start-line="120" selection-start-column="34" selection-end-line="120" selection-end-column="34" />
+        <state relative-caret-position="267">
+          <caret line="73" column="27" selection-start-line="70" selection-start-column="8" selection-end-line="74" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lab4/PrimMST.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2073#2079#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lab4/MST.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#833#839#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lab4/assignment5.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2448">
+          <caret line="108" column="52" lean-forward="true" selection-start-line="108" selection-start-column="52" selection-end-line="108" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1631#1640#0" expanded="true" />
+            <element signature="e#2183#2192#0" expanded="true" />
+            <element signature="e#3863#3872#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lab4/assignment6.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
         </state>
       </provider>
     </entry>

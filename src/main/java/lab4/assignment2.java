@@ -20,7 +20,6 @@ public class assignment2 {
         marked = new boolean[G.V()];
         distTo = new int[G.V()];
         edgeTo = new int[G.V()];
-
         bfs(G, s);
     }
 
@@ -56,7 +55,6 @@ public class assignment2 {
         return distTo[v];
     }
 
-
     public Iterable<Integer> pathTo(int v) {
 
         if (!hasPathTo(v)) return null;
@@ -68,50 +66,6 @@ public class assignment2 {
         return path;
     }
 
-
-    // check optimality conditions for single source
-    private boolean check(Graph G, int s) {
-
-        // check that the distance of s = 0
-        if (distTo[s] != 0) {
-            StdOut.println("distance of source " + s + " to itself = " + distTo[s]);
-            return false;
-        }
-
-        // check that for each edge v-w dist[w] <= dist[v] + 1
-        // provided v is reachable from s
-        for (int v = 0; v < G.V(); v++) {
-            for (int w : G.adj(v)) {
-                if (hasPathTo(v) != hasPathTo(w)) {
-                    StdOut.println("edge " + v + "-" + w);
-                    StdOut.println("hasPathTo(" + v + ") = " + hasPathTo(v));
-                    StdOut.println("hasPathTo(" + w + ") = " + hasPathTo(w));
-                    return false;
-                }
-                if (hasPathTo(v) && (distTo[w] > distTo[v] + 1)) {
-                    StdOut.println("edge " + v + "-" + w);
-                    StdOut.println("distTo[" + v + "] = " + distTo[v]);
-                    StdOut.println("distTo[" + w + "] = " + distTo[w]);
-                    return false;
-                }
-            }
-        }
-
-        // check that v = edgeTo[w] satisfies distTo[w] = distTo[v] + 1
-        // provided v is reachable from s
-        for (int w = 0; w < G.V(); w++) {
-            if (!hasPathTo(w) || w == s) continue;
-            int v = edgeTo[w];
-            if (distTo[w] != distTo[v] + 1) {
-                StdOut.println("shortest path edge " + v + "-" + w);
-                StdOut.println("distTo[" + v + "] = " + distTo[v]);
-                StdOut.println("distTo[" + w + "] = " + distTo[w]);
-                return false;
-            }
-        }
-
-        return true;
-    }
 
     public static void main(String[] args) throws IOException {
         BufferedReader scanner = new BufferedReader(new FileReader("tiny.txt"));
