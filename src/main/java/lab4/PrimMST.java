@@ -1,5 +1,8 @@
 package lab4;
-
+/********************************************************************************************************
+ * Assignment4
+ * compute the Minimum spanning tree for edgeweighted graph
+ *******************************************************************************************************/
 import edu.princeton.cs.algorithms.IndexMinPQ;
 import edu.princeton.cs.algorithms.UF;
 import edu.princeton.cs.algs4.Queue;

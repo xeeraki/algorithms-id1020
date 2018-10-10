@@ -1,5 +1,8 @@
 package lab4;
-
+/********************************************************************************************************
+ * Assignment 3
+ * Edge weighted graph
+ *******************************************************************************************************/
 import edu.princeton.cs.algs4.Bag;
 import edu.princeton.cs.algs4.Graph;
 import edu.princeton.cs.algs4.Stack;
